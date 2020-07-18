@@ -13,6 +13,10 @@
 	font-family: "OpenSans-BoldItalic";
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 body{
 	font-size: 13px;
 	overflow-x: hidden;
@@ -353,7 +357,8 @@ li,a{
 	background-image: url('../img/Layer 25.png');
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 478px;
+	background-position: 63%;
+	min-height: 478px;
 }
 
 .provided{
@@ -598,7 +603,7 @@ li,a{
 
 .contact-us{
 	background-color: #2046b3;
-	height: 684px;
+	min-height: 684px;
 	width: 697px;
 	float: right;
 }
@@ -717,6 +722,8 @@ input::placeholder {
 .sublame{
 	display: flex;
 	background-image: url('../img/Layer 45.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 	min-height: 654px;
 }
 
@@ -764,6 +771,113 @@ input::placeholder {
     padding-left: 117px;
 }
 
+@media screen and (max-width: 1200px){
+	.about-sublime {
+    	padding-top: 65px;
+    	padding-left: 11px;
+	}
+
+	.about {
+    	padding-right: 73px;
+	}
+
+	/*project*/
+
+	.project-nav{
+    	padding-left: 11px;
+	}
+
+	.card-img-1 img {
+    	width: 25%;
+	}
+
+	.card-img-2 img {
+    	width: 25%;
+	}
+
+	/*strategic*/
+
+	.staregic {
+    	padding-left: 11px;
+	}
+
+	.strateg-card {
+    	padding-left: 0px;
+	}
+
+	.method {
+    	padding-right: 0px;
+	}
+
+	/*sevices-provided*/
+
+	.provided {
+    	padding-left: 11px;
+	}
+
+	.sevices-info {
+    	text-align: center;
+    	padding-left: 0px;
+    	justify-content: space-around;
+	}
+	
+	.page {
+    	padding-right: 0px;
+	}
+
+	.page-top {
+    	padding-right: 0px;
+	}
+
+	.page-top {
+    	padding-top: 0px;
+	}
+
+	.game-design{
+		padding-top: 55px;
+	}
+	
+	/*our team*/
+
+	.our-team {
+    	display: block;
+    	padding-left: 11px;
+	}
+
+	.info-left-padding-bottom {
+    	padding-left: 0px;
+	}
+	
+	.our-team-text {
+    	padding-top: 35px;
+	}
+
+	.our-team-person {
+    	justify-content: space-around;
+	}
+
+	/*testimonials*/
+
+	.testimonials {
+    	padding-left: 11px;
+	}
+
+	.test-person {
+    	padding-right: 205px;
+	}
+	
+	/*blog*/
+
+	.blog {
+    	padding-left: 11px;
+	}
+
+	.blog-card-info {
+    	padding-left: 45px;
+	}	
+}
+
+
 @media screen and (max-width: 992px){
 	
 	body{
@@ -805,6 +919,12 @@ input::placeholder {
     	border-right: 0px solid;
 	}
 
+	.about::before {
+    	top: 102px;
+    	left: 33px;
+    	width: 49%;
+	}
+
 	.about-sublime {
     	flex-direction: column;
     	padding-left: 0px;
@@ -822,9 +942,11 @@ input::placeholder {
     	padding-bottom: 41px;
 	}
 
+	/*featured projects*/
+
 	.project-nav {
     	padding-top: 15px;
-    	padding-left: 0px;
+    	padding-left: 11px;
     	padding-bottom: 23px;
 	}
 
@@ -839,9 +961,8 @@ input::placeholder {
     	flex-wrap: wrap;
 	}
 
-	.staregic {
-    	padding-left: 0px; 
-	}
+	/*strategic process*/
+
 
 	.strateg-card {
     	padding-left: 0px;
@@ -855,14 +976,110 @@ input::placeholder {
 	    padding-right: 0px;
 	}
 
+	/*sevices-provided*/
+
+	.sevices-info {
+    	text-align: center;
+    	padding-left: 0px;
+    	justify-content: space-around;
+	}
+	
+	.page {
+		width: 327px;
+    	padding-right: 0px;
+	}
+
+	.page-top {
+    	padding-right: 0px;
+	}
+	
+	/*our team*/
+
+	.our-team {
+    	display: block;
+	}
+
+	.our-before::before {
+    	left: 9px;
+    	width: 23%;
+	}
+
+	.info-left-padding-bottom {
+    	padding-left: 0px;
+	}
+
+	.our-team-text {
+    	padding-top: 25px;
+	}
+
+	.our-team-person {
+    	justify-content: space-around;
+    	flex-wrap: wrap;
+	}
+
+	/*testimonials*/
+
+	.test-before::before {
+    	left: 54px;
+    	width: 45%;
+	}
+
+	.test-before {
+    	padding-bottom: 39px;
+	}
+
+	.test-person {
+    	padding-left: 79px;
+    	padding-right: 117px;
+	}
+
+	.game-design{
+		padding-top: 35px;
+	}
+
+	.app-design{
+		padding-top: 35px;
+	}
+
+	/*blog*/
+
+	.blog {
+		display: block;
+	}
+
+	.blog-before::before {
+    	width: 10%;
+	}
+
+	.blog-menu-nav a {
+    	padding-right: 15px;
+	}
+
+	.blog-card {
+    	justify-content: space-around;
+   		padding-left: 0px;
+    	text-align: center;
+	}
+
+	.blog-card-info {
+    	padding-left: 0px;
+	}
+
+	.blog-card-info p {
+    	width: 183px;
+	}
+
+	.sublame-footer-menu {
+    	padding-left: 11px;
+	}
+	
+	.icon-footer {
+    	margin-left: 11px;
+	}
 }
 
 
 @media screen and (max-width: 762px){
-	
-	body{
-		font-size: 9px;
-	}
 
 	.sublime-hed {
     	padding-left: 17px;
@@ -924,12 +1141,8 @@ input::placeholder {
 	.our-info {
 		padding-right: 0px;
     	padding-left: 0px;
-    	width: 53%;
+    	width: 97%;
     	padding-bottom: 25px;
-	}
-
-	.method {
-    	lex-direction: column; 
 	}
 
 	.method-info {
@@ -946,16 +1159,39 @@ input::placeholder {
     	padding-top: 20px;
 	}
 
-	padding-bottom: 25px;
+	.page {
+    	padding-bottom: 37px;
+	}
+
+	.app-design {
+    	padding-top: 0px;
+	}
+
+	.game-design {
+    	padding-top: 0px;
+	}
+
+	.contact-us {
+    	width: 100%;
+	}
+
+	.contact-form {
+    	argin-left: 0px;
+    	margin: 0 auto;
+	}
+
+	.footer-header h1 {
+    	display: none;
+	}
+
+	.sublame {
+    	background-position: 93%;
+	}
 }
 
 
 
 @media screen and (max-width: 576px){
-	
-	body{
-		font-size: 7px;
-	}
 
 	.sublime-hed {
     	padding-left: 3px;
@@ -1013,5 +1249,74 @@ input::placeholder {
     	font-size: 11px;
 	}
 
+	.card-img-2 img {
+   		width: 50%;
+	}
+	
+	.card-img-1 img {
+    	width: 50%;
+	}
+
+	.game-design{
+		padding-bottom: 35px;
+	}
+
+	.sublame {
+    	background-position: 83%;
+	}
+
+	.our-team-text {
+    padding-right: 7px;
+	}
+
+	.footer-header h1 {
+	 	display: none;
+	}
+
+	.testimonials {
+    	flex-wrap: wrap;
+    	justify-content: center;
+	}
+	.testimonials-text {
+    	padding-left: 0px;
+	}
+
+	.test-person {
+    	padding-left: 0px;
+    	padding-right: 0px;
+	}
+
+	.blog-card {
+    	flex-wrap: wrap;
+	}
+
+	.project-nav ul {
+    	display: block;
+	}
+
+	.project-nav li:nth-of-type(2n) {
+    	padding-left: 0px;
+    	padding-right: 0px;
+	}
+
+	.our-img img{
+		width: 100%;
+	}
+
+	.contact {
+    	width: 320px;
+	}
+
+	.contact-form {
+    	width: 320px;
+	}
+
+	.Mabile {
+    	width: 100%;
+	}
+
+	.mail {
+    	width: 100%;
+	}
 
 }
